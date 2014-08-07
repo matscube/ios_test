@@ -7,19 +7,37 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize navigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+/*    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    return YES;*/
+    
+    RootViewController *rootViewController = [[RootViewController alloc] initWithStyle:UITableViewStylePlain];
+    NSManagedObjectContext *context = [self managedObjectContext];
+    if (!context) {
+        
+    }
+    rootViewController.managedObjectContext = context;
+    
+    UINavigationController *aNavigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    self.navigationController = aNavigationController;
+    
+    [self.window addSubview:[navigationController view]];
+    [self.window makeKeyAndVisible];
+    
+//    [rootViewController release];
     return YES;
 }
 

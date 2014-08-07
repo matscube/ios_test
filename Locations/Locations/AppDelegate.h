@@ -19,4 +19,8 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+
+//UINavigationController *navigationController;
+@property (nonatomic, retain) UINavigationController *navigationController;
+
 @end

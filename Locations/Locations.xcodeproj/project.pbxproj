@@ -22,6 +22,7 @@
 		21902E4F1993EDAF00815202 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21902E331993EDAF00815202 /* CoreData.framework */; };
 		21902E571993EDAF00815202 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21902E551993EDAF00815202 /* InfoPlist.strings */; };
 		21902E591993EDAF00815202 /* LocationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21902E581993EDAF00815202 /* LocationsTests.m */; };
+		21902E641993F08300815202 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21902E631993F08300815202 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		21902E541993EDAF00815202 /* LocationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationsTests-Info.plist"; sourceTree = "<group>"; };
 		21902E561993EDAF00815202 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		21902E581993EDAF00815202 /* LocationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationsTests.m; sourceTree = "<group>"; };
+		21902E621993F08300815202 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		21902E631993F08300815202 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				21902E441993EDAF00815202 /* Images.xcassets */,
 				21902E411993EDAF00815202 /* Locations.xcdatamodeld */,
 				21902E361993EDAF00815202 /* Supporting Files */,
+				21902E621993F08300815202 /* RootViewController.h */,
+				21902E631993F08300815202 /* RootViewController.m */,
 			);
 			path = Locations;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			files = (
 				21902E401993EDAF00815202 /* AppDelegate.m in Sources */,
 				21902E431993EDAF00815202 /* Locations.xcdatamodeld in Sources */,
+				21902E641993F08300815202 /* RootViewController.m in Sources */,
 				21902E3C1993EDAF00815202 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
