@@ -1,25 +1,43 @@
 //
 //  AppDelegate.m
-//  coreDataSample
+//  Locations
 //
-//  Created by TakanoriMatsumoto on 2014/07/31.
+//  Created by TakanoriMatsumoto on 2014/08/08.
 //  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize navigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+/*    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    return YES;*/
+    
+    RootViewController *rootViewController = [[RootViewController alloc] initWithStyle:UITableViewStylePlain];
+    NSManagedObjectContext *context = [self managedObjectContext];
+    if (!context) {
+        
+    }
+    rootViewController.managedObjectContext = context;
+    
+    UINavigationController *aNavigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    self.navigationController = aNavigationController;
+    
+    [self.window addSubview:[navigationController view]];
+    [self.window makeKeyAndVisible];
+    
+//    [rootViewController release];
     return YES;
 }
 
@@ -90,7 +108,7 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"coreDataSample" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Locations" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -103,7 +121,7 @@
         return _persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"coreDataSample.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Locations.sqlite"];
     
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "214DB298198977F400879995"
-               BuildableName = "coreDataSample.app"
-               BlueprintName = "coreDataSample"
-               ReferencedContainer = "container:coreDataSample.xcodeproj">
+               BlueprintIdentifier = "21902E291993EDAF00815202"
+               BuildableName = "Locations.app"
+               BlueprintName = "Locations"
+               ReferencedContainer = "container:Locations.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "214DB2B8198977F400879995"
-               BuildableName = "coreDataSampleTests.xctest"
-               BlueprintName = "coreDataSampleTests"
-               ReferencedContainer = "container:coreDataSample.xcodeproj">
+               BlueprintIdentifier = "21902E491993EDAF00815202"
+               BuildableName = "LocationsTests.xctest"
+               BlueprintName = "LocationsTests"
+               ReferencedContainer = "container:Locations.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "214DB298198977F400879995"
-            BuildableName = "coreDataSample.app"
-            BlueprintName = "coreDataSample"
-            ReferencedContainer = "container:coreDataSample.xcodeproj">
+            BlueprintIdentifier = "21902E291993EDAF00815202"
+            BuildableName = "Locations.app"
+            BlueprintName = "Locations"
+            ReferencedContainer = "container:Locations.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "214DB298198977F400879995"
-            BuildableName = "coreDataSample.app"
-            BlueprintName = "coreDataSample"
-            ReferencedContainer = "container:coreDataSample.xcodeproj">
+            BlueprintIdentifier = "21902E291993EDAF00815202"
+            BuildableName = "Locations.app"
+            BlueprintName = "Locations"
+            ReferencedContainer = "container:Locations.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "214DB298198977F400879995"
-            BuildableName = "coreDataSample.app"
-            BlueprintName = "coreDataSample"
-            ReferencedContainer = "container:coreDataSample.xcodeproj">
+            BlueprintIdentifier = "21902E291993EDAF00815202"
+            BuildableName = "Locations.app"
+            BlueprintName = "Locations"
+            ReferencedContainer = "container:Locations.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

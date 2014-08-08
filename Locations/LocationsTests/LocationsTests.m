@@ -1,18 +1,18 @@
 //
-//  coreDataSampleTests.m
-//  coreDataSampleTests
+//  LocationsTests.m
+//  LocationsTests
 //
-//  Created by TakanoriMatsumoto on 2014/07/31.
+//  Created by TakanoriMatsumoto on 2014/08/08.
 //  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface coreDataSampleTests : XCTestCase
+@interface LocationsTests : XCTestCase
 
 @end
 
-@implementation coreDataSampleTests
+@implementation LocationsTests
 
 - (void)setUp
 {

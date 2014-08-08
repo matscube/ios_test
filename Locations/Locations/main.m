@@ -1,8 +1,8 @@
 //
 //  main.m
-//  coreDataSample
+//  Locations
 //
-//  Created by TakanoriMatsumoto on 2014/07/31.
+//  Created by TakanoriMatsumoto on 2014/08/08.
 //  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
 //
 
