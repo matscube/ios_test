@@ -32,6 +32,17 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    // View test
+    /*
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    label.text = @"hogehoge";
+    label.textColor = [UIColor blackColor];
+
+    [self.view addSubview:label];
+     */
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
