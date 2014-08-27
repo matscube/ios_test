@@ -18,6 +18,7 @@ func debugVector2(vii:[Int : [Int]]) {
     }
 }
 
+/*
 var a:[Int : [Int]] = [Int : [Int]]()
 
 for var i = 0; i < 10; i++ {
@@ -32,40 +33,13 @@ debugVector2(a)
 
 typealias Point = (Int, Int)
 let origin: Point = (0, 0)
+*/
 
 
-/**
- * subscript test
- */
-class SubScriptTest {
-    var usernames:[String]?
-    
-    init() {
-        usernames = []
-    }
+// Assign
+var a:String
+var b:Int; var c:Int
+(a, _, (b, c)) = ("test", 9.34, (1, 4))
 
-    // define [] operator
-    subscript(index:Int) -> String {
-        // var t = ins[index]
-        get {
-            assert(usernames?.count > index, "Index out of range")
-            return "\(usernames?[index])さん昨晩はお楽しみでしたね"
-        }
-        // ins[index] = hoge
-        set(name) {
-            assert(0 > index || usernames?.count >= index, "Index out of range")
-            usernames?.insert(name, atIndex: index)
-        }
-    }
-    
-    // define [ , ] operator
-    subscript(index:Int, index2:Int) -> String {
-        return (usernames![index] as NSString).substringWithRange(NSMakeRange(index2, 1))
-    }
-    
 
-}
-
-let sst = SubScriptTest()
-sst[0] = "hoge"
-sst[0, 2]
+//https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Expressions.html#//apple_ref/doc/uid/TP40014097-CH32-XID_720
